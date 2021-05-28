@@ -1,4 +1,4 @@
-<h1>Information Of An Url</h1>
+<h1>Information Extraction for Vietnamese Real Estate Advertisements - Nhóm 1 - NLP</h1>
 
 <form method="POST">
     <label style="font-size:30px;">Url Input</label>
@@ -9,11 +9,23 @@
 </form>
 
 <p>
-    <label style="color:blue; font-size:20px">Url: {{ input }}</label>
-    <br />
-    <label style="font-size:30px;">Output</label>
-    <br />
+    <label style="color:blue; font-size:20px">Url: {{ input }}</label><br />
+    <label style="font-size:30px;">Information Of Advertisement</label><br />
     <div style="width:1000px;height:300px;border:1px solid #000;">
         {{ output }}
     </div>
+</p>
+
+<p>
+    <label style="font-size:30px;">Extracted Information</label><br />
+    <label style="color: red; font-size:20px">Loại tin: {{typeE}}</label> <br />
+    <label style="color: red; font-size:20px">Loại nhà: {{cateE}}</label> <br />
+    <label style="color: red; font-size:20px">Diện tích: {{ae}}</label> <br />
+    <label style="color: red; font-size:20px">Đường: {{road}}</label> <br />
+    <label style="color: red; font-size:20px">Quận/huyện: {{dt}}</label> <br />
+    <label style="color: red; font-size:20px">Thành phố: {{ct}}</label> <br />
+    <label style="color: red; font-size:20px">Giá tiền: {{pr}}</label> <br />
+    <label style="color: red; font-size:20px">Số điện thoại: {{number}}</label> <br />
+    <label style="color: red; font-size:20px">Tên người liên hệ: {{fullname}}</label> <br />
+
 </p>
