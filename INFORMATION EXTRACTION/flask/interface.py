@@ -13,8 +13,13 @@ def my_form():
 
 @app.route('/', methods=['POST'])
 def information():
-    url = request.form['text']
-    infor = main(url)
+    try:
+        url = request.form['text']
+        infor = main(url)
+    except:
+        url = None
+        infor = request.form['text']
+
     typeE, cateE, ae, road, dt, ct, pr, number, fullname = findAll(infor) 
     return render_template('homepage.html', output=infor, input=url,typeE = ', '.join(typeE),\
                                             cateE = ', '.join(cateE),ae=', '.join(ae),road=', '.join(road),\

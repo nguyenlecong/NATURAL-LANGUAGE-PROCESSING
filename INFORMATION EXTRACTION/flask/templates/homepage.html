@@ -3,21 +3,29 @@
 <form method="POST">
     <label style="font-size:30px;">Url Input</label>
     <br />
-    <input name="text" style="height: 50px; width: 1000px">
+    <input name="text" style="height: 25px; width: 1000px">
+    <input type="submit">
+    <br />
+</form>
+
+<form method="POST">
+    <label style="font-size:30px;">Text Input</label>
+    <br />
+    <textarea name="text" cols="40" rows="5" style="height: 150px; width: 1000px"></textarea>
     <input type="submit">
     <br />
 </form>
 
 <p>
-    <label style="color:blue; font-size:20px">Url: {{ input }}</label><br />
-    <label style="font-size:30px;">Information Of Advertisement</label><br />
-    <div style="width:1000px;height:300px;border:1px solid #000;">
+    <label style="color:blue; font-size:30px">Url: {{ input }}</label><br />
+    <label style="color:blue; font-size:30px">Information Of Advertisement</label><br />
+    <div style="width:1000px;height:150px;border:1px solid #000;">
         {{ output }}
     </div>
 </p>
 
 <p>
-    <label style="font-size:30px;">Extracted Information</label><br />
+    <label style="color: blue; font-size:30px;">Extracted Information</label><br />
     <label style="color: red; font-size:20px">Loại tin: {{typeE}}</label> <br />
     <label style="color: red; font-size:20px">Loại nhà: {{cateE}}</label> <br />
     <label style="color: red; font-size:20px">Diện tích: {{ae}}</label> <br />
@@ -27,5 +35,4 @@
     <label style="color: red; font-size:20px">Giá tiền: {{pr}}</label> <br />
     <label style="color: red; font-size:20px">Số điện thoại: {{number}}</label> <br />
     <label style="color: red; font-size:20px">Tên người liên hệ: {{fullname}}</label> <br />
-
 </p>
